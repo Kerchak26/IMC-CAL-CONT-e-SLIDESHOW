@@ -1,0 +1,71 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="estilologin.css" />
+    </head>
+
+    <body>
+        <main id="contador">
+            <span id="value">0</span>
+            <button onclick="onIncrement()">+</button>
+            <button onclick="onDecrement()">-</button>
+        </main>
+
+        <main id="relogio" style="display: none;">
+            <span id="hour">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <button type="button" onclick="voltarR()">VOLTAR</button>
+        </main>
+
+        <div id="header">
+            <h1>sistema de login</h1>
+        <div id="form">
+            <label>Nome</label>
+            <input type="text" id="nome"/>
+            <label>E-mail</label>
+            <input type="text" id="email"/>
+            <button type="button" onclick="entrar()"> ENTRAR </button>
+        </div>
+        </div>
+        <hr />
+
+        <div id="infos" style="display:none">
+            <div id="content">
+            <h1> Bem vindo,</h1>
+            <h3 id="infonome"></h3>
+            <b> E-mail cadastrado </b>
+            <span id="infoemail"></span>
+            <div id="botoes">
+                <button type="button" onclick="exibirImc()">Calcular IMC</button>
+                <button type="button" onclick="sair()">SAIR </button>
+                <button type="button" onclick="clock()">RELÓGIO </button>
+            </div>
+        </div>
+        </div>
+        <div id="imc" style="display:none">
+            <h1>Calcule seu IMC</h1>
+            <form id="calcimc">
+                <label>PESO/kg</label>
+                <input type="text" placeholder="seu peso em kg" id="peso" />
+                <label>Altura/M</label>
+                <input type="text" placeholder="sua altura em M" id="altura" />
+                <button type="button" onclick="calcImc()"> Ver IMC </button>
+            </form>
+            <br />
+            <div id="infosImc" style="display:none">
+                <h2 id="infopeso"></h2>
+                <h2 id="infoaltura"> </h2>
+                <p> Seu IMC é: </p> <br />
+                <span id="infoimc"></span>
+                <span id="resultado"></span>
+            </div>
+            <button type="button" onclick="voltar()">VOLTAR</button>
+            
+        </div>
+
+        <script src="scriptlogin2.js"></script>
+    </body>
+
+</html>
